@@ -15,7 +15,6 @@ return {
         uppercase = false,
       },
       modes = {
-
         char = {
           enabled = true,
           -- dynamic configuration for ftFT motions
@@ -49,10 +48,25 @@ return {
           highlight = { backdrop = true },
           jump = { register = false },
         },
+
         search = {
           -- when `true`, flash will be activated during regular search by default.
           -- You can always toggle when searching with `require("flash").toggle()`
           enabled = false,
+        },
+      },
+      highlight = {
+        -- show a backdrop with hl FlashBackdrop
+        backdrop = true,
+        -- Highlight the search matches
+        matches = true,
+        -- extmark priority
+        priority = 10001,
+        groups = {
+          match = "FlashMatch",
+          current = "FlashCurrent",
+          backdrop = "FlashBackdrop",
+          label = "FlashLabel",
         },
       },
     },
