@@ -10,4 +10,12 @@ return {
       vim.fn["mkdp#util#install"]()
     end,
   },
+
+  {
+    "AckslD/nvim-FeMaco.lua",
+    ft = { "markdown" },
+    config = function()
+      require("femaco").setup()
+    end,
+  },
 }

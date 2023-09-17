@@ -2,13 +2,13 @@
   "import": {
     "scope": "javascript,typescript,typescriptreact",
     "prefix": "im",
-    "body": ["import { $1 } from '$2';"],
+    "body": ["import { $2 } from '$1';"],
     "description": "Import a module"
   },
   "export-all": {
     "scope": "javascript,typescript,typescriptreact",
     "prefix": "ex",
-    "body": ["export * from '$2';"],
+    "body": ["export * from '$1';"],
     "description": "Export a module"
   },
   "require": {
@@ -23,11 +23,6 @@
   "Destructure Object": {
     "prefix": "cc",
     "body": "const { $2 } = $1"
-  },
-  "import module": {
-    "prefix": ["im", "imp", "ii"],
-    "body": "import {} from '$1'",
-    "description": "自动导入"
   },
   "header comment": {
     "prefix": "hco",
