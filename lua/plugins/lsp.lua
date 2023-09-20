@@ -49,7 +49,8 @@ return {
         -- THIS IS FOR BUILTIN LSP
         vim.diagnostic.open_float(0, {
           scope = "cursor",
-          focusable = false,
+          focusable = true,
+          zindex = 20,
           close_events = {
             "CursorMoved",
             "CursorMovedI",

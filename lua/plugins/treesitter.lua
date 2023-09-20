@@ -136,7 +136,7 @@ return {
     config = function()
       require("hlargs").setup({
         highlight = {},
-        color = "#EBE76C",
+        color = "#f86294",
         excluded_filetypes = {},
         disable = function(lang, bufnr) -- If changed, `excluded_filetypes` will be ignored
           return vim.tbl_contains(require("util.ft").exclude_ft, lang)
